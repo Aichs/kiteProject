@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: org.aichs.kite.entity
+  mapper-locations: classpath:org.aichs.kite.dao/mapper/**/*.xml
+
+pagehelper:
+  reasonable: true
+  helper-dialect: mysql
+  support-methods-arguments: true
+  params: count=countsql
+  auto-dialect: true
+  close-conn: false

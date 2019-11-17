@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <properties>
+        <!-- 基本的文件的输出信cd 息的配置 -->
+        <property name="LOG_HOME">D:/logs/ny-website</property>
+        <!-- 日志备份目录 -->
+        <property name="LOGS">${LOG_HOME}/logs</property>
+        <property name="LOGS_ERROR">${LOG_HOME}/logs_error</property>
+    </properties>
+
+    <Appenders>
+
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />-->
+            <PatternLayout
+                    pattern="%date{HH:mm:ss.SSS} %highlight{%-5level}[%style{%-25.25c{1.} %4.4line}{blue}] %msg%n" disableAnsi="false"/>
+        </Console>
+
+        <!-- 错误日志 -->
+        <RollingRandomAccessFile name="error"
+                                 fileName="${LOGS_ERROR}/cms_error.log" filePattern="${LOGS_ERROR}/$${date:yyyy-MM}/kite_error-%d{yyyy-MM-dd}-%i.log.gz">
+            <ThresholdFilter level="error" onMatch="ACCEPT"
+                             onMismatch="DENY" />
+            <PatternLayout
+                    pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger:%line] - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true" />
+                <SizeBasedTriggeringPolicy size="5 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="100" />
+        </RollingRandomAccessFile>
+
+        <!-- 程序员调试日志 -->
+        <RollingRandomAccessFile name="log"
+                                 fileName="${LOGS}/cms.log" filePattern="${LOGS}/$${date:yyyy-MM}/cms-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout
+                    pattern="%date{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level [%logger:%line] - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true" />
+                <SizeBasedTriggeringPolicy size="5 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="100" />
+        </RollingRandomAccessFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- 将业务dao接口填写进去,并用控制台输出即可 -->
+        <logger name="org.aichs.kite.dao" level="debug" additivity="false">
+            <appender-ref ref="Console" />
+            <appender-ref ref="log" />
+        </logger>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="error" />
+            <AppenderRef ref="log" />
+        </Root>
+    </Loggers>
+</Configuration>
