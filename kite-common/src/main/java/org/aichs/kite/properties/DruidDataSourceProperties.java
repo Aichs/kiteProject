@@ -17,8 +17,8 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 @ConfigurationProperties(prefix = "spring.datasource.druid")
-//@PropertySource("classpath:/kite-web/application.yml")
-@EnableConfigurationProperties(DruidDataSourceProperties.class)
+@PropertySource("classpath:/application.yml")
+//@EnableConfigurationProperties(DruidDataSourceProperties.class)
 public class DruidDataSourceProperties {
 
     private String url;

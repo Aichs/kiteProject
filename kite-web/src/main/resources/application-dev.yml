@@ -10,14 +10,14 @@ server:
 
 spring:
   datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://132.232.45.176:3306/kite?serverTimezone=UTC&useSSL=false&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: qq735519898
+
     druid:
-      type: com.alibaba.druid.pool.DruidDataSource
-      driverClassName: com.mysql.jdbc.Driver
-      driver-class-name: com.mysql.jdbc.Driver
       platform: mysql
-      url: jdbc:mysql://132.232.45.176:3306/kite?serverTimezone=UTC&useSSL=false&autoReconnect=true&allowMultiQueries=true
-      username: root
-      password: qq735519898
       initialSize: 5
       minIdle: 5
       maxActive: 20

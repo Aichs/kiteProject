@@ -36,12 +36,12 @@
     </typeHandlers>
 
     <!-- 配置mybatis的分页插件PageHelper -->
-    <plugins>
-        <!-- com.github.pagehelper为PageHelper类所在包名 -->
-        <plugin interceptor="com.github.pagehelper.PageHelper">
-            <!-- 设置数据库类型Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库 -->
-            <property name="dialect" value="mysql"/>
-        </plugin>
-    </plugins>
+<!--    <plugins>-->
+<!--        &lt;!&ndash; com.github.pagehelper为PageHelper类所在包名 &ndash;&gt;-->
+<!--        <plugin interceptor="com.github.pagehelper.PageHelper">-->
+<!--            &lt;!&ndash; 设置数据库类型Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库 &ndash;&gt;-->
+<!--            <property name="dialect" value="mysql"/>-->
+<!--        </plugin>-->
+<!--    </plugins>-->
 
 </configuration>

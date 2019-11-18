@@ -4,6 +4,7 @@ import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.MappedJdbcTypes;
 import org.apache.ibatis.type.MappedTypes;
 import org.apache.ibatis.type.TypeHandler;
+import org.springframework.context.annotation.Configuration;
 
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
@@ -18,6 +19,7 @@ import java.sql.SQLException;
  * @Description: 自定义类型Handler处理sql入参两端空格
  * @Date: 2019/11/17 14:45
  */
+@Configuration
 @MappedTypes(String.class)
 @MappedJdbcTypes(value = {JdbcType.CHAR, JdbcType.VARCHAR}, includeNullJdbcType = true)
 public class StringTrimmingTypeHandler implements TypeHandler<String> {
