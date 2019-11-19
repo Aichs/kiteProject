@@ -15,7 +15,7 @@
     <dependencies>
         <dependency>
             <groupId>org.aichs</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>kite-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
