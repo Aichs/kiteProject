@@ -12,10 +12,5 @@ mybatis:
   type-aliases-package: org.aichs.kite.entity
   mapper-locations: classpath:org.aichs.kite.dao/mapper/**/*.xml
 
-pagehelper:
-  reasonable: true
-  helper-dialect: mysql
-  support-methods-arguments: true
-  params: count=countsql
-  auto-dialect: true
-  close-conn: false
+#  configuration:
+#    default-enum-type-handler: org.aichs.kite.configs.StringTrimmingTypeHandler

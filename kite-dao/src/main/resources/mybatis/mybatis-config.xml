@@ -31,17 +31,7 @@
     </settings>
 
     <!-- 使用自定义类型handler处理sql入参两端空格 -->
-<!--    <typeHandlers>-->
-<!--        <typeHandler handler="org.aichs.kite.configs.StringTrimmingTypeHandler"/>-->
-<!--    </typeHandlers>-->
-
-    <!-- 配置mybatis的分页插件PageHelper -->
-<!--    <plugins>-->
-<!--        &lt;!&ndash; com.github.pagehelper为PageHelper类所在包名 &ndash;&gt;-->
-<!--        <plugin interceptor="com.github.pagehelper.PageHelperelper">-->
-<!--            &lt;!&ndash; 设置数据库类型Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库 &ndash;&gt;-->
-<!--            <property name="dialect" value="mysql"/>-->
-<!--        </plugin>-->
-<!--    </plugins>-->
-
+    <typeHandlers>
+        <typeHandler handler="org.aichs.kite.configs.StringTrimmingTypeHandler"/>
+    </typeHandlers>
 </configuration>

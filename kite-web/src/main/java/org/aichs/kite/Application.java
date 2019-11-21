@@ -24,7 +24,7 @@ import java.util.List;
  * @Date 2019/11/17 15:31
  */
 @ServletComponentScan
-@MapperScan("org.aichs.kite")
+@MapperScan("org.aichs.kite.dao")
 @EnableScheduling
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
