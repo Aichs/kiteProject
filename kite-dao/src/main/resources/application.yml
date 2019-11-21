@@ -13,4 +13,4 @@ mybatis:
   mapper-locations: classpath:org.aichs.kite.dao/mapper/**/*.xml
 
 #  configuration:
-#    default-enum-type-handler: org.aichs.kite.configs.StringTrimmingTypeHandler
+#    default-enum-type-handler: org.aichs.kite.common.configs.StringTrimmingTypeHandler

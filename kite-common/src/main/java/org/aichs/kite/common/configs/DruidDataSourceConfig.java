@@ -1,8 +1,8 @@
-package org.aichs.kite.configs;
+package org.aichs.kite.common.configs;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.WebStatFilter;
-import org.aichs.kite.properties.DruidDataSourceProperties;
+import org.aichs.kite.common.properties.DruidDataSourceProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ import java.sql.SQLException;
 
 /**
  * @ProjectName: kite
- * @Package: org.aichs.kite.configs
+ * @Package: org.aichs.kite.common.configs
  * @ClassName: DruidDataSourceConfig
  * @Author: MECHREVO
  * @Description: druid配置类

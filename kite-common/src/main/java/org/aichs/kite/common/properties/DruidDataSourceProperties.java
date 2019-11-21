@@ -1,4 +1,4 @@
-package org.aichs.kite.properties;
+package org.aichs.kite.common.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @ProjectName: kite
- * @Package: org.aichs.kite.properties
+ * @Package: org.aichs.kite.common.properties
  * @ClassName: DruidDataSourceProperties
  * @Author: MECHREVO
  * @Description: 数据库配置类

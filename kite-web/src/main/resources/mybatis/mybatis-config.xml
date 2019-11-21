@@ -32,7 +32,7 @@
 
     <!-- 使用自定义类型handler处理sql入参两端空格 -->
 <!--    <typeHandlers>-->
-<!--        <typeHandler handler="org.aichs.kite.configs.StringTrimmingTypeHandler"/>-->
+<!--        <typeHandler handler="org.aichs.kite.common.configs.StringTrimmingTypeHandler"/>-->
 <!--    </typeHandlers>-->
 
     <!-- 配置mybatis的分页插件PageHelper -->

@@ -3,7 +3,7 @@
     <properties>
         <!-- 基本的文件的输出信cd 息的配置 -->
         <property name="LOG_HOME">D:/logs/ny-website</property>
-        <property name="LOG_HOME">/Users/acer/Documents/kiteProject/logs/kiteLog</property>
+<!--        <property name="LOG_HOME">/Users/acer/Documents/kiteProject/logs/kiteLog</property>-->
         <!-- 日志备份目录 -->
         <property name="LOGS">${LOG_HOME}/logs</property>
         <property name="LOGS_ERROR">${LOG_HOME}/logs_error</property>

@@ -1,4 +1,4 @@
-package org.aichs.kite.configs;
+package org.aichs.kite.common.configs;
 
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.MappedJdbcTypes;
@@ -13,7 +13,7 @@ import java.sql.SQLException;
 
 /**
  * @ProjectName: kite
- * @Package: org.aichs.kite.configs
+ * @Package: org.aichs.kite.common.configs
  * @ClassName: StringTrimmingTypeHandler
  * @Author: MECHREVO
  * @Description: 自定义类型Handler处理sql入参两端空格
