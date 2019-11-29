@@ -27,6 +27,14 @@ public class ResultUtil {
         resultVO.setSuccess(false);
         resultVO.setCode(resultEnum.getCode());
         resultVO.setMsg(resultEnum.getMsg());
-        return 
+        return resultVO;
+    }
+
+    public static ResultVO errorParam(String resultMsg){
+        ResultVO resultVO = new ResultVO();
+        resultVO.setSuccess(false);
+        resultVO.setCode(ResultEnum.ERROR_REQUEST_PARAM.getCode());
+        resultVO.setMsg(resultMsg);
+        return resultVO;
     }
 }

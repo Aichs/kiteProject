@@ -1,6 +1,8 @@
 package org.aichs.kite.common.handle;
 
+import cn.hutool.core.collection.CollUtil;
 import org.aichs.kite.common.base.ResultVO;
+import org.aichs.kite.common.utils.ResultUtil;
 import org.springframework.validation.BindException;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
