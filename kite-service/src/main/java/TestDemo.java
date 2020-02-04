@@ -1,7 +1,6 @@
 import org.aichs.kite.entity.Employee;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.springframework.context.annotation.Bean;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -29,9 +28,15 @@ public class TestDemo {
         return emps;
     }
 
-//    public List<Employee> filterEmployee(){
-//
-//    }
+    public List<Employee> filterEmployee(List<Employee> list,MyPredicate<Employee> mp){
+        List<Employee> emps = new ArrayList<>();
+        for (Employee employee : list) {
+            if (mp.test(employee)){
+                emps.add(employee);
+            }
+        }
+        return emps;
+    }
 
     @Test
     public void test1() {
@@ -44,6 +49,13 @@ public class TestDemo {
     // 按照当前公司中工资大于5000的员工信息
     @Test
     public void test2(){
+        List<Employee> list = filterEmployee(employees,e -> e.getSalary() >= 5000);
+        list.forEach(System.out::println);
+    }
+
+    // 在没有接口的情况下实现
+    @Test
+    public void test3(){
 
     }
 }
