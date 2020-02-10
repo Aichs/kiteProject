@@ -53,9 +53,16 @@ public class TestDemo {
         list.forEach(System.out::println);
     }
 
-    // 在没有接口的情况下实现
+    // 在没有接口的情况下实现 Stream API
     @Test
     public void test3(){
+        // employees集合作为stream流数据读取，使用参数employee判断工资大于等于5000的员工信息并遍历打印
+        employees.stream().filter(employee -> employee.getSalary() >= 5000)
+                .limit(2)
+                .forEach(System.out::println);
+        System.out.println("--------------------------------------------");
 
+        // 获取集合内所有对象的name属性值
+        employees.stream().map(Employee::getName).forEach(System.out::println);
     }
 }
