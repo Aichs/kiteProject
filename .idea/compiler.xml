@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kite-common" />
+        <module name="kite-dao" />
+        <module name="kiate-entity" />
+        <module name="kite-service" />
+        <module name="kite-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kiate-entity" target="1.8" />
+      <module name="kite" target="1.8" />
+      <module name="kite-common" target="1.8" />
+      <module name="kite-dao" target="1.8" />
+      <module name="kite-service" target="1.8" />
+      <module name="kite-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kiate-entity" options="-parameters" />
+      <module name="kite-common" options="-parameters" />
+      <module name="kite-dao" options="-parameters" />
+      <module name="kite-service" options="-parameters" />
+      <module name="kite-web" options="-parameters" />
+    </option>
+  </component>
+</project>

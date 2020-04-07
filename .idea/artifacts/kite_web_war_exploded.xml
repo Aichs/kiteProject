@@ -1,0 +1,114 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="kite-web:war exploded">
+    <output-path>$PROJECT_DIR$/kite-web/target/kite-web-0.0.1-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>kite-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="kite-web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="kite-service-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="kite-service" />
+          </element>
+          <element id="archive" name="kite-dao-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="kite-dao" />
+          </element>
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.50" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib:1.3.50" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.50" />
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
+          <element id="library" level="project" name="Maven: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.50" />
+          <element id="library" level="project" name="Maven: junit:junit:4.12" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:2.1" />
+          <element id="archive" name="kite-common-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="kite-common" />
+          </element>
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-websocket:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-messaging:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-websocket:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.10" />
+          <element id="library" level="project" name="Maven: cn.hutool:hutool-all:4.6.6" />
+          <element id="archive" name="kiate-entity-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="kiate-entity" />
+          </element>
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: jakarta.annotation:jakarta.annotation-api:1.3.5" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.25" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-security:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.29" />
+          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest:2.1" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.4" />
+          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: com.zaxxer:HikariCP:3.4.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.mybatis.spring.boot:mybatis-spring-boot-autoconfigure:2.1.1" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.3" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:2.0.3" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.18" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-json:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.10.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.10.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.10.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.10.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.10.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.0" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.27" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.27" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.27" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-validation:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: jakarta.validation:jakarta.validation-api:2.0.1" />
+          <element id="library" level="project" name="Maven: org.hibernate.validator:hibernate-validator:6.0.18.Final" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final" />
+          <element id="library" level="project" name="Maven: com.fasterxml:classmate:1.5.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper-spring-boot-starter:1.2.3" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper-spring-boot-autoconfigure:1.2.3" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.1.2" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:1.0" />
+          <element id="library" level="project" name="Maven: net.sf.json-lib:json-lib:jdk15:2.4" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.5" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" />
+          <element id="library" level="project" name="Maven: org.jsoup:jsoup:1.11.2" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.10" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-log4j2:2.2.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-slf4j-impl:2.12.1" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.12.1" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.12.1" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-jul:2.12.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.29" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.2.1.RELEASE" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/kite-web/target/kite-web-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="kite-web/web/Web" />
+    </root>
+  </artifact>
+</component>

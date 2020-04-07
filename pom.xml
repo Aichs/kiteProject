@@ -24,6 +24,7 @@
 
     <properties>
         <start-class>org.aichs.kite.Application</start-class>
+        <spring.security.version>5.1.6.RELEASE</spring.security.version>
         <java.version>1.8</java.version>
     </properties>
 
@@ -43,6 +44,18 @@
                     <artifactId>spring-boot-starter-logging</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <!-- spring-security -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${spring.security.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${spring.security.version}</version>
         </dependency>
 
         <dependency>
