@@ -24,7 +24,7 @@
 
     <properties>
         <start-class>org.aichs.kite.Application</start-class>
-        <spring.security.version>5.1.6.RELEASE</spring.security.version>
+        <spring.security.version>5.2.10.RELEASE</spring.security.version>
         <java.version>1.8</java.version>
     </properties>
 
